@@ -1,12 +1,10 @@
-Datasets : https://www.kaggle.com/andrewmvd/face-mask-detection
+**Choosed Dataset from Kaggle** : [https://www.kaggle.com/andrewmvd/face-mask-detection](https://www.kaggle.com/andrewmvd/face-mask-detection)
 
-Label_map : labelmap.pbtxt
+## Tried both ssdlite\_mobilenet\_v2\_coco and faster\_rcnn\_inception\_v2\_coco
 
-For setup and Training:
-Local/windows: https://c17hawke.github.io/tfod-setup/
+- I have trained bothe the nodels with **150k steps** and have acheived good accuracy in Faster RCNN when compared to SSDlite.
+- But the Frames per second is very good in SSD(10+ FPS) than in RCNN(0.7 FPS). 
 
-For using colab gpu for training: mask_detection_ssdlie_tf1_x.ipynb
-Upload all the model files with train, test record files to your drive then use colab for training
-There are also another methods without uploading
+## **References:**
 
-For Live cam detection: mask_detect_live_cam.py
+https://github.com/hgoyal194/real-time-facemask-detection/blob/master/README.md
